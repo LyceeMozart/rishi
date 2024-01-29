@@ -3,19 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rencontre App</title>
+    <title>RencontreApp</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Rencontre App</h1>
+        <h1>RencontreApp</h1>
     </header>
 
-    <main id="main-content">
-        <!-- Contenu principal chargé dynamiquement par JavaScript -->
+    <main>
+        <section id="hero-section">
+            <h2>Trouvez votre partenaire idéal</h2>
+            <p>Rencontrez des personnes intéressantes près de chez vous.</p>
+            <a href="#inscription" class="cta-button">Inscrivez-vous maintenant</a>
+        </section>
+
+        <section id="features-section">
+            <h2>Fonctionnalités</h2>
+            <ul>
+                <li>Recherchez des profils</li>
+                <li>Créez votre profil</li>
+                <li>Discutez avec d'autres utilisateurs</li>
+                <li>Rencontrez de nouvelles personnes</li>
+            </ul>
+        </section>
+
+        <section id="inscription">
+            <h2>Inscription</h2>
+            <form action="inscription.php" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="motDePasse">Mot de passe :</label>
+                <input type="password" id="motDePasse" name="motDePasse" required>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
     </main>
 
-    <script src="main.js"></script>
+    <footer>
+        <p>&copy; 2024 RencontreApp. Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>
